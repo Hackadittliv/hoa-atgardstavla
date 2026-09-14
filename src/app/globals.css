@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b0a08;
+  --foreground: #f3ede0;
+  --gold: #d4af5f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold: #d4af5f;
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+input[type="date"] {
+  color-scheme: dark;
+}
